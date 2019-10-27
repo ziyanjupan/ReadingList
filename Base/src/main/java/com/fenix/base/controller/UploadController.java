@@ -40,9 +40,9 @@ public class UploadController {
             return "请选择文件";
         }
         String fileName = file.getOriginalFilename();
-        if (!checkFileTypeIsEnable(fileName)){
-            return "文件格式不支持";
-        }
+//        if (!checkFileTypeIsEnable(fileName)){
+//            return "文件格式不支持";
+//        }
         String filePath = "C:/upload/";
         File dest = new File(filePath, fileName);
         try {
